@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h1>{{question}}_________ ??</h1>
+        <form method="post" action="http://127.0.0.1:7000/polls/{{qid}}/results/">{% csrf_token %}
+             {{form}}
+             <br>
+             <input type="submit" value='Vote'/>
+        </form>
+    </body>
+</html>
